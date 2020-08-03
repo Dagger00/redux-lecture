@@ -3,13 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-import {rootReducer} from "./store/rootReducer";
+import {Provider} from "react-redux";
 
-const store = createStore(rootReducer, {
-  logoColor: 'blue',
-})
+import {store} from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,4 +15,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
